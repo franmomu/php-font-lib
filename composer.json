@@ -24,7 +24,8 @@
         "bin-dir": "bin"
     },
     "require": {
-        "ext-mbstring": "*"
+        "ext-mbstring": "*",
+        "azjezz/psl": "^2.0"
     },
     "require-dev": {
         "symfony/phpunit-bridge" : "^3 || ^4 || ^5"

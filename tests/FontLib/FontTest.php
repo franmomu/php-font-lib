@@ -53,4 +53,18 @@ class FontTest extends TestCase
         $this->assertEquals(53, count($cmapFormat12Table['glyphIndexArray']));
     }
 
+    public function testLoadWOFFFontSuccessfully()
+    {
+        $trueTypeFont = Font::load('sample-fonts/OpenSans-Regular.woff');
+
+        $this->assertInstanceOf('FontLib\WOFF\File', $trueTypeFont);
+    }
+
+    public function testLoadWOFF2FontSuccessfully()
+    {
+        $trueTypeFont = Font::load('sample-fonts/nm5.woff2');
+
+        $this->assertInstanceOf('FontLib\WOFF2\File', $trueTypeFont);
+    }
+
 }

@@ -46,6 +46,10 @@ class Font {
         $class = "WOFF\\File";
         break;
 
+      case "wOF2":
+        $class = "WOFF2\\File";
+        break;
+
       case "ttcf":
         $class = "TrueType\\Collection";
         break;
